@@ -1,0 +1,5 @@
+As a user, I want "Another game button", so that I can play a game immediately after I finish a game.
+
+As a user, I want contact list, so that I can add friends.
+
+As a user, I want history list, so that I can view my game history.
