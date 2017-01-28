@@ -3,15 +3,14 @@ Classes:
         a. need help with this one!
         b. might be a part of Game.java, but I'm not sure
     2) Game.java
-        a. Ship object [5]
+        a. Ship objects (each named, needed for de-serialization)
             - string Name
             - int Length
-            - int [2] start
-            - int [2] end
-        b. Player object [2]
-            - string Name
-            - List int[2] hits
-            - List int[2] misses
+            - Point start
+            - Point end
+        b. Point
+            - int across
+            - int down
         c. Functions
             - placeShip
             - fireShot
