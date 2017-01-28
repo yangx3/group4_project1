@@ -1,0 +1,49 @@
+Classes:
+    1) GSON conversion class
+        a. need help with this one!
+        b. might be a part of Game.java, but I'm not sure
+    2) Game.java
+        a. Ship objects (each named, needed for de-serialization)
+            - string Name
+            - int Length
+            - Point start
+            - Point end
+        b. Point
+            - int across
+            - int down
+        c. Functions
+            - placeShip
+            - fireShot
+            - computer_placeShip
+            - computer_fireShot
+
+General Flow:
+    1) The webpage calls Main to generate a game
+        a. Main constructs Game object
+        b. Game object sent to GSON converter
+        c. GSON converter hands back JSON string
+        b. Main sends JSON back to front-end
+    2) Ship placement activated
+        a. game state JSON sent to Main
+        b. JSON sent to GSON converter
+        c. GSON converter creates game object
+        d. Converter hands object to Main
+        e. Main calls Game.placeShip
+            -needs to error check, not sure how to send an error
+             to front-end <- gonna need implementation
+        f. Main calls Game.computer_placeShip
+        g. Main gives GSON converter Game object
+        h. GSON converter hands back JSON string
+        i. Main sends JSON string to front end
+    3) Fire shot activated
+        a. game state JSON sent to Main
+        b. JSON sent to GSON converter
+        c. GSON converter creates game object
+        d. Converter hands object to Main
+        e. Main calls Game.fireShot
+        f. Main calls Game.computer_fireShot
+        g. Main gives GSON converter Game object
+        h. GSON converter hands back JSON string
+        i. Main sends JSON string to front end
+        ***(Need a way of detecting once all ships on a side have been sunk)***
+    4) Game Over
