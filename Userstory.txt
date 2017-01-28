@@ -45,3 +45,15 @@
     Difficulty: 5
     -
     Description: Waiting for implementation of multiplayer
+8) As a user, I want choose different size of maps, so that I can experience different difficulty of games.
+    Difficulty: 2
+    -
+    Description: Set the size of map before the beginning of game.
+9) As a user, I want use items during games, so that I can have more fun.
+   Difficulty 5
+   -
+   Description: Allow players to use funny items to make games more fun.
+10)As a user, I want control the game speed, so that I can play fast if I want.
+   Difficulty 5
+   -
+   Description: Allow players to speed up the fire animation.
