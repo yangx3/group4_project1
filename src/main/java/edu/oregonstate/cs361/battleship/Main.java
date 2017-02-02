@@ -5,6 +5,8 @@ import static spark.Spark.get;
 import static spark.Spark.post;
 import static spark.Spark.staticFiles;
 
+//I have added this comment to test (via: ABDUL)
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,8 +22,8 @@ public class Main {
     }
 
     //This function should return a new model
-    private static String newModel() {
-        return null;
+    static String newModel() {
+        return "MODEL";
     }
 
     //This function should accept an HTTP request and deseralize it into an actual Java object.
@@ -31,7 +33,7 @@ public class Main {
 
     //This controller should take a json object from the front end, and place the ship as requested, and then return the object.
     private static String placeShip(Request req) {
-        return null;
+        return "SHIP";
     }
 
     //Similar to placeShip, but with firing.
