@@ -48,5 +48,4 @@ public class BattleshipModel {
     public List<point> player_hited_point(){return ai_nothit;}
 
 
-
 }
